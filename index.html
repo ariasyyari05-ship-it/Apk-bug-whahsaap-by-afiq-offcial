@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFIQ OFFICIAL</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 500px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            background: linear-gradient(90deg, #00dbde, #fc00ff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        
+        .subtitle {
+            font-size: 1rem;
+            color: #aaa;
+            margin-top: 5px;
+        }
+        
+        .card {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .card-title {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: #00dbde;
+            text-align: center;
+        }
+        
+        .input-group {
+            margin-bottom: 20px;
+        }
+        
+        .input-label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+        
+        .input-field {
+            width: 100%;
+            padding: 12px 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            color: #fff;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .input-field:focus {
+            outline: none;
+            border-color: #00dbde;
+            box-shadow: 0 0 0 2px rgba(0, 219, 222, 0.2);
+        }
+        
+        .select-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .select-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+        
+        .select-item:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-2px);
+        }
+        
+        .select-item.active {
+            background: rgba(0, 219, 222, 0.2);
+            border-color: #00dbde;
+        }
+        
+        .radio {
+            margin-right: 10px;
+            accent-color: #00dbde;
+        }
+        
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .btn {
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(90deg, #00dbde, #fc00ff);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 219, 222, 0.4);
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #777;
+            font-size: 0.8rem;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .logo {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">AFIQ OFFICIAL</div>
+            <div class="subtitle">Bug Hunter Tools</div>
+        </div>
+        
+        <div class="card">
+            <div class="card-title">Target Number</div>
+            <div class="input-group">
+                <label class="input-label" for="target">MASUKAN NO TARGET</label>
+                <input type="text" id="target" class="input-field" placeholder="Contoh: 08123456789">
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-title">Select Bug</div>
+            <div class="select-group">
+                <label class="select-item">
+                    <input type="radio" name="bug" class="radio" checked>
+                    <span>Select Bug AFIQ OFFICIAL</span>
+                </label>
+                <label class="select-item">
+                    <input type="radio" name="bug" class="radio">
+                    <span>SELECT BUG AFIQ OFFICIAL</span>
+                </label>
+            </div>
+        </div>
+        
+        <div class="btn-group">
+            <button class="btn btn-primary">SEND BUG</button>
+        </div>
+    </div>
+    
+    <div class="footer">
+        &copy; 2023 AFIQ OFFICIAL. All rights reserved.
+    </div>
+
+    <script>
+        // Menambahkan interaksi pada pilihan bug
+        document.querySelectorAll('.select-item').forEach(item => {
+            item.addEventListener('click', function() {
+                // Hapus kelas active dari semua item
+                document.querySelectorAll('.select-item').forEach(el => {
+                    el.classList.remove('active');
+                });
+                
+                // Tambahkan kelas active ke item yang diklik
+                this.classList.add('active');
+                
+                // Set radio button yang sesuai sebagai checked
+                const radio = this.querySelector('input[type="radio"]');
+                radio.checked = true;
+            });
+        });
+    </script>
+</body>
+</html>
